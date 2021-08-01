@@ -19,7 +19,7 @@ server.applyMiddleware({ app });
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// Runs on prodction
+// Runs on production 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
